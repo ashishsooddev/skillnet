@@ -4,12 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/media/cartoon-11551057788bw864qbup7.png" type="image/x-icon">
-    <title>SkillNet</title>
-    <script src="./assets/script/index.js" defer></script>
-    <link rel="stylesheet" href="./assets/style/index.css" media="all">
+    <title>SkillNet home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./assets/script/home.js" defer></script>
+    <link rel="stylesheet" href="./assets/style/home.css" media="all">
    
 </head>
     <body>
-    
+        <header class="topbar">
+            <div class="topbar-left">
+                <h2 class="logo-text">Skillnet</h2>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <nav class="topbar-nav">
+                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+                <a href="#"><i class="fa-solid fa-user-group"></i> Network</a>
+                <a href="#"><i class="fa-solid fa-briefcase"></i> Jobs</a>
+            </nav>
+        </header>
+        <main class="dashboard-layout"></main>
+            <aside class="profile-panel">
+
+                <div class="profile-card">
+                    <img src="./assets/media/profile.jpg"
+                    alt="profile"
+                    class="profile-photo">
+
+                    <h3>Candace Foy</h3>
+                    <p class="profile-role">Web Developer Student</p>
+                    <p class="profile-city">Winnipeg, Canada</p>
+                    <button class="follow-btn">Follow</button>
+
+                    <div class="profile-stats">
+                        <div>
+                            <h4>350</h4>
+                            <span>Connections</span>
+                        </div>
+
+                        <div>
+                            <h4>1.2K</h4>
+                            <span>Followers</span>
+                        </div>
+                        </div>
+                    </div>
+            </aside> 
+            <section class="feed-section">
+                <article class="feed-post">
+                    <div class="post-header">
+                        <img src="./assets/media/profile.jpg" alt="">
+                        <div>
+                            <h4>Candace Foy</h4>
+                            <p>2 hours ago</p>
+                        </div>
+                    </div>
+                    <p class="post-text">
+                    Just completed my LinkedIn-style project using HTML, CSS and JavaScript.
+                    Learning APIs is really fun!</p>
+
+                    <img src="./assets/media/post1.jpg" class="post-image" alt="post image">
+
+                    <div class="post-actions">
+                    <button><i class="fa-regular fa-heart"></i> Like</button>
+                    <button><i class="fa-regular fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                    </div>
+                </article>
+
+                <article class="feed-post">
+                    <div class="post-header">
+                        <img src="./assets/media/profile.jpg" alt="">
+                        <div>
+                            <h4>Candace Foy</h4>
+                            <p>Yesterday</p>
+                        </div>
+                    </div>
+                    <p class="post-text">Working on JavaScript projects daily to improve frontend skills.</p>
+                    <img src="./assets/media/post2.jpg" class="post-image" alt="post image">
+
+                    <div class="post-actions">
+                        <button><i class="fa-regular fa-heart"></i> Like</button>
+                        <button><i class="fa-regular fa-comment"></i> Comment</button>
+                        <button><i class="fa-solid fa-share"></i> Share</button>
+                    </div>
+                </article>
+
+                <article class="feed-post">
+                    <div class="post-header">
+                        <img src="./assets/media/profile.jpg" alt="">
+                        <div>
+                            <h4>Candace Foy</h4>
+                            <p>3 days ago</p>
+                        </div>
+                    </div>
+
+                    <p class="post-text">Started learning APIs and localStorage. Excited for more projects.</p>
+
+                    <img src="./assets/media/post3.jpg" class="post-image" alt="post image">
+
+                    <div class="post-actions">
+                        <button><i class="fa-regular fa-heart"></i> Like</button>
+                        <button><i class="fa-regular fa-comment"></i> Comment</button>
+                        <button><i class="fa-solid fa-share"></i> Share</button>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="network-panel">
+                <div class="network-card">
+                    <h3>People You May Know</h3>
+                    <div id="randomUsers"></div>
+                </div>
+            </aside>
+        </main>     
+        <footer class="page-footer">
+            <p>© 2026 Skillnet | Designed by SkillNet</p>
+        </footer>  
     </body>
 </html>
