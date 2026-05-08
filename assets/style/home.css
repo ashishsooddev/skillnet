@@ -215,3 +215,32 @@ body {
   color: var(--text-secondary);
   margin-top: 40px;
 }
+
+.user-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.add-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #357ABD;
+  transform: scale(1.1);
+}

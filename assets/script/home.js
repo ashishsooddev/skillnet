@@ -18,23 +18,23 @@ async function loadUsers() {
     const users = data.results;
 
     users.forEach(user => {
-
       const userCard = document.createElement("div");
-
       userCard.classList.add("user-box");
-
       userCard.innerHTML = `
         <img src="${user.picture.medium}" alt="user">
 
-        <div>
-          <h4>
+        <div class="user-info">
+            <h4>
             ${user.name.first} ${user.name.last}
-          </h4>
+            </h4>
 
-          <p>${user.location.city}</p>
+            <p>${user.location.country}</p>
         </div>
-      `;
 
+        <button class="add-btn">
+            +
+        </button>
+        `;
       usersContainer.appendChild(userCard);
 
     });
