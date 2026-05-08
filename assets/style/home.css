@@ -207,3 +207,11 @@ body {
   color: var(--text-secondary);
   font-size: 14px;
 }
+
+.page-footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  margin-top: 40px;
+}
