@@ -19,7 +19,7 @@ const LoginApp = {
 
     if (inputUser === storedUser && inputPass === storedPass) {
       localStorage.setItem('isLoggedIn', 'true');
-      location.href = '../home.html';
+      location.href = './home.html';
     } else {
       this.showError('Incorrect email or password, please try again.');
     }
