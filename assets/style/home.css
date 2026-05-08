@@ -215,22 +215,3 @@ body {
   color: var(--text-secondary);
   margin-top: 40px;
 }
-
-@media (max-width: 900px) {
-
-  .dashboard-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .topbar {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .topbar-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
