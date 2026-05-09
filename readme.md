@@ -16,8 +16,6 @@ Skillnet is a lightweight front-end skill communication platform. It focuses on 
 
 ## 🌐 Github Host Link
 
--   \- Live demo website
-
 - Demo Email: superhandsome@gmail.com
 
 - Demo Password: ilovecoding123
