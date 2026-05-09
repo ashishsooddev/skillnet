@@ -10,11 +10,8 @@ async function loadUsers() {
 
     const response =
       await fetch("https://randomuser.me/api/?results=10&seed=same&nat=CA");
-
     const data = await response.json();
-
     const users = data.results;
-
     users.forEach(user => {
       const userCard = document.createElement("div");
       userCard.classList.add("user-box");
@@ -38,10 +35,8 @@ async function loadUsers() {
     });
 
   } catch (error) {
-
     usersContainer.innerHTML =
-      "<p>Unable to load users.</p>";
-
+      "<p>Unable to load users this time.</p>";
   }
 }
 
