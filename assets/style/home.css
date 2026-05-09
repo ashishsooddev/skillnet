@@ -77,7 +77,11 @@ main{
 .topbar-nav a:hover {
   color: var(--primary-color);
 }
-
+.log img{
+  border-radius: 20px;
+  height: 60px;
+  width: 60px;
+}
 .dashboard-layout {
   width: 95%;
   margin: 30px auto;

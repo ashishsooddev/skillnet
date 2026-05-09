@@ -3,9 +3,7 @@
 if (localStorage.getItem("isLoggedIn") !== "true") {
   window.location.href = "./home.html";
 }
-
 const usersContainer = document.getElementById("randomUsers");
-
 async function loadUsers() {
 
   try {
